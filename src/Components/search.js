@@ -5,6 +5,7 @@ class Search extends React.Component{
       return (
       <div>
          <input type="text"/>
+         <input type="submit"/>
       </div>
       )
   }
