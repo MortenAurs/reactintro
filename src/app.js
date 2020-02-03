@@ -1,12 +1,12 @@
 import React from "react";
 import Search from "./Components/search";
+import Welcome from "./Components/welcome";
 
 class App extends React.Component{
    render(){
       return (
       <div>
-         <h1>Hello World</h1>
-         <p>Does this work then?</p>
+         <Welcome name="Morten"/>
          <Search />
       </div>
       )
