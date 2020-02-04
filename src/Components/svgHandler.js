@@ -3,7 +3,17 @@ import {UncontrolledReactSVGPanZoom} from 'react-svg-pan-zoom';
 import { ReactSVGPanZoom } from 'react-svg-pan-zoom';
 import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
 
+class NewToolbar extends React.Component{
+    render(){
+        return <span></span>
+    }
+}
 
+class NewNavigation extends React.Component{
+    render(){
+        return <span></span>
+    }
+}
 export default class SvgHAndler extends React.PureComponent {
 
   Viewer = null
@@ -11,7 +21,7 @@ export default class SvgHAndler extends React.PureComponent {
   componentDidMount() {
     this.Viewer.fitToViewer();
   }
- 
+
   render() {
     return (
       <div>
@@ -19,10 +29,12 @@ export default class SvgHAndler extends React.PureComponent {
             src="cake.svg" 
             render= {(content) => (
                <UncontrolledReactSVGPanZoom 
-                  height={500} 
-                  width={500}
-                  ref={Viewer => this.Viewer = Viewer}
-                  >
+               width={500}
+               height={500}
+               ref = {ref => this.Viewer = ref}
+               customToolbar={NewToolbar} // Removes toolbar
+               customMiniature={NewNavigation} // Removes miniature map
+               >
                   <svg width={500} height={500} >
                      {content}
                   </svg>  
