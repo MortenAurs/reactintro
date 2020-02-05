@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to clone and run project
+In your terminal where you want to save the project do following commands:
+
+git clone https://github.com/MortenAurs/reactintro.git
+
+cd reactintro
+
+yarn start
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
