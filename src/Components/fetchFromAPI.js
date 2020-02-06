@@ -5,8 +5,8 @@ class FetchFromAPI extends React.Component{
    constructor(props) {
       super(props);
       this.state = {
-         name: "Default Name",
-         email: "Default Email",
+         name: null,
+         email: null,
          isLoaded: false,
          error: null
       };
