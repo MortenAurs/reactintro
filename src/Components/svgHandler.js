@@ -1,6 +1,5 @@
 import React from 'react';
 import {UncontrolledReactSVGPanZoom} from 'react-svg-pan-zoom';
-import { ReactSVGPanZoom } from 'react-svg-pan-zoom';
 import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
 
 class NewToolbar extends React.Component{
