@@ -11,8 +11,11 @@ If you don't have npm installed:
 Go to https://nodejs.org/en/ and download and install nodejs (npm is part of the nodejs installation)
 
 If you have npm installed or installed nodejs above:
+
 npm install -g yarn
+
 yarn install
+
 yarn start
 
 
