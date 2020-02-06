@@ -1,13 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How to clone and run project
+## How to clone and run project in Windows:
 In your terminal where you want to save the project do following commands:
 
 git clone https://github.com/MortenAurs/reactintro.git
 
 cd reactintro
 
+If you don't have npm installed:
+Go to https://nodejs.org/en/ and download and install nodejs (npm is part of the nodejs installation)
+
+If you have npm installed or installed nodejs above:
+npm install -g yarn
+yarn install
 yarn start
+
 
 
 
