@@ -34,7 +34,7 @@ class FetchFromAPI extends React.Component{
       const { name, email, isLoaded, error } = this.state;
       //console.log(this.state);
       if(error) {
-         return <div>Error: {error.message} (Probably because API is unavailable)</div>
+         return <div></div>
       } else if (!isLoaded) {
          return <div>Loading..</div>
       } else {
