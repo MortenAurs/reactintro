@@ -47,7 +47,7 @@ export default class SvgHAndler extends React.PureComponent {
          this.setState({img_url: "floorplan.svg"})
          break;
       case 2:
-         this.setState({img_url: "cake.svg"})
+         this.setState({img_url: "plan2.svg"})
          break;
       default:
          this.setState({img_url: "dd"})
