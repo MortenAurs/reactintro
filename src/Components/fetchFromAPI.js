@@ -48,7 +48,7 @@ class FetchFromAPI extends React.Component{
                {rooms.map((room) => (
                <ul key={room.id}>
                   <li>
-n                    <p>Code: {room.code }</p>
+                     <p>Code: {room.code }</p>
                      <p>Name: {room.name }</p>
                      <p>Seats: {room.seats }</p>
                      <p>Campus: {room.campus.name}</p>
