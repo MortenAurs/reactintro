@@ -1,6 +1,7 @@
 import React from "react";
+import SvgHandler from "./svgHandler";
 
-class Welcome extends React.Component{
+class Map extends React.Component{
    constructor(props){
       super(props);
       this.state = {name: "Morten"}
@@ -9,11 +10,11 @@ class Welcome extends React.Component{
       return (
       <div>
          <h1>Hello, { this.state.name }</h1>
-         <p>This is a welcome message</p>
+         <p>Choose the floor</p>
+         <SvgHandler />
       </div>
       )
-      
   }
 }
 
-export default Welcome;
+export default Map;
