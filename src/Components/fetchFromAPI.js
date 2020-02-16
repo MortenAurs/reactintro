@@ -45,11 +45,10 @@ class FetchFromAPI extends React.Component{
       } else {
          return (
             <div>
-               {this.state.rooms.map((room) => (
-               <ul>
-                  <li key={room.id}>
-                     <p>Id: {room.id }</p>
-                     <p>Code: {room.code }</p>
+               {rooms.map((room) => (
+               <ul key={room.id}>
+                  <li>
+n                    <p>Code: {room.code }</p>
                      <p>Name: {room.name }</p>
                      <p>Seats: {room.seats }</p>
                      <p>Campus: {room.campus.name}</p>

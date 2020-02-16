@@ -1,11 +1,9 @@
 import React from 'react';
 import {
-   fitSelection,
    fitToViewer,
    INITIAL_VALUE,
    ReactSVGPanZoom,
    TOOL_PAN,
-   zoomOnViewerCenter
  } from 'react-svg-pan-zoom';
  import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
 
