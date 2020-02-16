@@ -1,4 +1,5 @@
 import React from "react";
+import FetchFromAPI from "./fetchFromAPI";
 
 class Search extends React.Component{
    render(){
@@ -6,6 +7,8 @@ class Search extends React.Component{
       <div>
          <input type="text"/>
          <input type="submit"/>
+         <br/>
+         <FetchFromAPI />
       </div>
       )
   }

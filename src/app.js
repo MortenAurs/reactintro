@@ -2,8 +2,6 @@ import React from "react";
 import Home from "./Components/home";
 import Search from "./Components/search";
 import Map from "./Components/map";
-import SvgHandler from "./Components/svgHandler";
-import FetchFromAPI from "./Components/fetchFromAPI";
 import {
    BrowserRouter as Router,
    Switch,
