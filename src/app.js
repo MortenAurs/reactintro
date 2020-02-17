@@ -2,13 +2,13 @@ import React from "react";
 import Home from "./Components/home";
 import Search from "./Components/search";
 import Map from "./Components/map";
+import FilterSearch from "./Components/filtersearch";
 import {
    BrowserRouter as Router,
    Switch,
    Route,
    Link
  } from "react-router-dom";
-
 
 class App extends React.Component{
    render(){
@@ -26,12 +26,18 @@ class App extends React.Component{
                      <li>
                      <Link to="/search">Search</Link>
                      </li>
+                     <li>
+                     <Link to="/filtersearch">Filter search</Link>
+                     </li>
                   </ul>
                </nav>
 
                <Switch>
                   <Route path="/search">
                      <Search />
+                  </Route>
+                  <Route path="/filtersearch">
+                     <FilterSearch />
                   </Route>
                   <Route path="/Map">
                      <Map />

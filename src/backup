@@ -1,0 +1,35 @@
+const columns = React.useMemo(
+      () => [
+        {
+          Header: 'USN',
+          columns: [
+            {
+              Header: 'Romkode',
+              accessor: 'code',
+            },
+            {
+              Header: 'Romnavn',
+              accessor: 'name',
+            },
+            {
+               Header: 'Seter',
+               accessor: 'seats',
+             },
+             {
+               Header: 'Campus',
+               accessor: 'campus',
+             },
+             {
+               Header: 'Bygg',
+               accessor: 'building',
+             },
+             {
+               Header: 'Etasje',
+               accessor: 'floor',
+             },
+          ],
+        },
+        
+      ],
+      []
+    )
