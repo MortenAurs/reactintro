@@ -19,6 +19,7 @@ class FetchFromAPI extends React.Component{
                isLoaded: true,
                rooms: data
             });
+            console.log(data);
             //console.log(this.state);
          },
             error => {
@@ -29,6 +30,7 @@ class FetchFromAPI extends React.Component{
             }
          );       
    }
+   
    render(){
       const { rooms, isLoaded, error } = this.state;
       console.log("THIS STATE");

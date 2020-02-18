@@ -9,6 +9,8 @@ import {
    Route,
    Link
  } from "react-router-dom";
+import FetchWithHooks from "./Components/fetchWithHooks";
+import FetchFromAPI from "./Components/fetchFromAPI";
 
 class App extends React.Component{
    render(){
@@ -29,6 +31,9 @@ class App extends React.Component{
                      <li>
                      <Link to="/filtersearch">Filter search</Link>
                      </li>
+                     <li>
+                     <Link to="/hookstest">Api call with Hooks</Link>
+                     </li>
                   </ul>
                </nav>
 
@@ -38,6 +43,9 @@ class App extends React.Component{
                   </Route>
                   <Route path="/filtersearch">
                      <FilterSearch />
+                  </Route>
+                  <Route path="/hookstest">
+                     <FetchWithHooks />
                   </Route>
                   <Route path="/Map">
                      <Map />
