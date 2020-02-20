@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import Griddle, {plugins} from "griddle-react";
 
+
 class FetchFromAPI extends React.Component {
     constructor(props) {
         super(props);
@@ -10,6 +11,7 @@ class FetchFromAPI extends React.Component {
             rooms: []
         }
     }
+
 
     componentDidMount() {
         const url = "http://localhost:8080/demo/all";
