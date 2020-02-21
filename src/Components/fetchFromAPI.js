@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import GriddleSearch from "./griddleSearch";
 
 class FetchFromAPI extends React.Component{
    constructor(props) {
@@ -44,21 +45,7 @@ class FetchFromAPI extends React.Component{
          return <div>Loading..</div>
       } else {
          return (
-            <div>
-               {rooms.map((room) => (
-               <ul key={room.id}>
-                  <li>
-                     <p>Code: {room.code }</p>
-                     <p>Name: {room.name }</p>
-                     <p>Seats: {room.seats }</p>
-                     <p>Campus: {room.campus.name}</p>
-                     <p>Building: {room.building.name}</p>
-                     <p>Floor: {room.floor.floornumber}</p>
-                     <hr/>
-                  </li>
-               </ul>
-               ))}
-            </div>
+            <GriddleSearch rooms={rooms}/>
          )
       }
   }
