@@ -35,12 +35,17 @@ class GriddleSearch extends React.Component{
       return (
       <div>
          <Griddle
-            data={data}
+            data={this.props.rooms}
             plugins={[plugins.LocalPlugin]}
+            styleConfig={styleConfig}
          >
-           <RowDefinition>
-               <ColumnDefinition id="name" />
-               <ColumnDefinition id="location.state" title="State" />
+            <RowDefinition>
+               <ColumnDefinition id="name" title="Room Name" width={70} customComponent={CustomColumn}/>
+               <ColumnDefinition id="code" title="Room Code" customHeadingComponent={CustomHeading} />
+               <ColumnDefinition id="seats" filterable={false} title="Seats" />
+               <ColumnDefinition id="campus.name" title="Campus" />
+               <ColumnDefinition id="building.name" title="Building" />
+               <ColumnDefinition id="floor.floornumber" title="Etasje" />
             </RowDefinition>
       </Griddle>
       </div>
