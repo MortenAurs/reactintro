@@ -32,8 +32,6 @@ class FetchFromAPI extends React.Component{
    }
    render(){
       const { rooms, isLoaded, error } = this.state;
-      console.log("THIS STATE");
-      console.log(this.state.rooms);
       if(error) {
          return (
             <div>
