@@ -6,6 +6,8 @@ import {
    TOOL_PAN,
  } from 'react-svg-pan-zoom';
  import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
+import GriddleSearch from './griddleSearch';
+
 
 class NewToolbar extends React.Component{
     render(){ 
@@ -18,15 +20,27 @@ class NewNavigation extends React.Component{
         return <span></span>
     }
 }
-export default class SvgHAndler extends React.PureComponent {
-   state = {tool: TOOL_PAN, 
-            value: INITIAL_VALUE, 
-            img_url: "floorplan.svg",
-         }
-   
+
+
+export default class SvgHandler extends React.PureComponent {
+   constructor(props) {
+      super(props)
+    
+      this.state = {
+         tool: TOOL_PAN, 
+         value: INITIAL_VALUE, 
+         img_url: "floorplan.svg",
+      };
+      this.handler = this.handler.bind(this);
+   }
 
    Viewer = null
 
+   handler() {
+      this.setState({
+         img_url: "cake.svg"
+      })
+   }
   
    changeTool(nextTool) {
       console.log("NEXTTOOL")
@@ -91,6 +105,7 @@ fitToViewer() {
                </ReactSVGPanZoom>
             )}
          />
+         <GriddleSearch action={this.handler} />
       </div>
     );
   }
