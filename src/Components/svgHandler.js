@@ -6,6 +6,8 @@ import {
    TOOL_PAN,
  } from 'react-svg-pan-zoom';
  import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
+ import '../Styles/styles.css';
+
 import GriddleSearch from './griddleSearch';
 
 
@@ -29,7 +31,7 @@ export default class SvgHandler extends React.PureComponent {
       this.state = {
          tool: TOOL_PAN, 
          value: INITIAL_VALUE, 
-         img_url: "floorplan.svg",
+         img_url: "Plan2.svg",
       };
       this.handler = this.handler.bind(this);
    }
@@ -56,10 +58,10 @@ export default class SvgHandler extends React.PureComponent {
  changeFloor(floor) {
    switch(floor){
       case 1:
-         this.setState({img_url: "floorplan.svg"})
+         this.setState({img_url: "Plan2.svg"})
          break;
       case 2:
-         this.setState({img_url: "Plan2.svg"})
+         this.setState({img_url: "floorplan.svg"})
          break;
       default:
          this.setState({img_url: "dd"})
@@ -90,7 +92,7 @@ fitToViewer() {
             src={this.state.img_url} 
             render= {(content) => (
                <ReactSVGPanZoom 
-               
+                  
                   width={1000}
                   height={500}
                   tool={this.state.tool} onChangeTool={tool=>this.changeTool(tool)}
@@ -105,7 +107,6 @@ fitToViewer() {
                </ReactSVGPanZoom>
             )}
          />
-         <GriddleSearch action={this.handler} />
       </div>
     );
   }
