@@ -31,7 +31,7 @@ export default class SvgHandler extends React.PureComponent {
       this.state = {
          tool: TOOL_PAN, 
          value: INITIAL_VALUE, 
-         img_url: "Plan2.svg",
+         img_url: "floor_plan_without_map.svg",
       };
       this.handler = this.handler.bind(this);
    }
@@ -58,10 +58,10 @@ export default class SvgHandler extends React.PureComponent {
  changeFloor(floor) {
    switch(floor){
       case 1:
-         this.setState({img_url: "Plan2.svg"})
+         this.setState({img_url: "floor_plan_without_map.svg"})
          break;
       case 2:
-         this.setState({img_url: "floorplan.svg"})
+         this.setState({img_url: "floor_plan_with_map.svg"})
          break;
       default:
          this.setState({img_url: "dd"})
