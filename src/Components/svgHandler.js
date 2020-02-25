@@ -9,6 +9,7 @@ import {
  import '../Styles/styles.css';
 
 import GriddleSearch from './griddleSearch';
+import IconUmbrella from './iconUmbrella';
 
 
 class NewToolbar extends React.Component{
@@ -88,25 +89,21 @@ fitToViewer() {
         <button className="btn" onClick={() => this.fitToViewer()}>Tilpass vindu</button>
         <hr/>
         
-         <ReactSvgPanZoomLoader 
-            src={this.state.img_url} 
-            render= {(content) => (
+         
                <ReactSVGPanZoom 
                   
                   width={1000}
-                  height={500}
+                  height={700}
                   tool={this.state.tool} onChangeTool={tool=>this.changeTool(tool)}
                   value={this.state.value} onChangeValue={value => this.changeValue(value)}
                   customToolbar={NewToolbar} // Removes toolbar
                   customMiniature={NewNavigation} // Removes miniature map
                >
-                  <svg width={1000} height={500} >
-                     {content}
+                  <svg width={1000} height={700} >
+                     <IconUmbrella />
                   </svg>  
                   
-               </ReactSVGPanZoom>
-            )}
-         />
+               </ReactSVGPanZoom>         
       </div>
     );
   }
