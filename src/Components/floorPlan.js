@@ -1,6 +1,6 @@
 import React from "react";
 
-class IconUmbrella extends React.Component{
+class FloorPlan extends React.Component{
    constructor(props){
       super(props);
       this.state = {
@@ -112,4 +112,4 @@ class IconUmbrella extends React.Component{
 }
   
   // which makes this reusable component for other views
- export default IconUmbrella;
+ export default FloorPlan;

@@ -8,7 +8,7 @@ import {
    Route,
    Link
  } from "react-router-dom";
-import IconUmbrella from "./Components/iconUmbrella";
+import FloorPlan from "./Components/floorPlan";
 
 
 class App extends React.Component{
@@ -41,7 +41,7 @@ class App extends React.Component{
                      <Map />
                   </Route>
                   <Route path="/svg">
-                     <IconUmbrella />
+                     <FloorPlan />
                   </Route>
                   <Route path="/">
                      <Home />

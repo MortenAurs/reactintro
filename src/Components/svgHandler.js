@@ -9,7 +9,7 @@ import {
  import '../Styles/styles.css';
 
 import GriddleSearch from './griddleSearch';
-import IconUmbrella from './iconUmbrella';
+import IconUmbrella from './floorPlan';
 
 
 class NewToolbar extends React.Component{
