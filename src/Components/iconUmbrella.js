@@ -1,7 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 749.11 401.36">
+// Icon
+import React from "react";
+
+class IconUmbrella extends React.Component{
+   render() {
+     return (
+        <div>
+           <h1></h1>
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 749.11 401.36">
     <defs>
         <style>
-         .cls-1{
+         {`.cls-1{
            fill:#90a6bb;
          }
          .cls-2,.cls-3{
@@ -13,7 +21,7 @@
          }
          .cls-4{
             fill:#d1dee4;
-         }
+         }`}
          </style>
     </defs>
     <title>Illustrator_Plan2</title>
@@ -77,3 +85,10 @@
         <rect class="cls-1" x="665.65" y="125.62" width="20.7" height="15.54" />
     </g>
 </svg>
+        </div>
+     )
+   }
+}
+  
+  // which makes this reusable component for other views
+ export default IconUmbrella;

@@ -8,6 +8,7 @@ import {
    Route,
    Link
  } from "react-router-dom";
+import IconUmbrella from "./Components/iconUmbrella";
 
 
 class App extends React.Component{
@@ -21,10 +22,13 @@ class App extends React.Component{
                      <Link to="/">Home</Link>
                      </li>
                      <li>
-                     <Link to="/Map">Map</Link>
+                     <Link to="/map">Map</Link>
                      </li>
                      <li>
                      <Link to="/search">Search</Link>
+                     </li>
+                     <li>
+                     <Link to="/svg">Svg</Link>
                      </li>
                   </ul>
                </nav>
@@ -33,8 +37,11 @@ class App extends React.Component{
                   <Route path="/search">
                      <Search />
                   </Route>
-                  <Route path="/Map">
+                  <Route path="/map">
                      <Map />
+                  </Route>
+                  <Route path="/svg">
+                     <IconUmbrella />
                   </Route>
                   <Route path="/">
                      <Home />
