@@ -1,13 +1,13 @@
 // Icon
 import React from "react";
-import IconUmbrella from "./iconUmbrella";
+import FloorPlan from "./floorPlan";
 
 class Svg extends React.Component{
    render() {
      return (
         <div>
             
-            <IconUmbrella />
+            <FloorPlan />
        </div>
      )
    }

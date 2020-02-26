@@ -9,7 +9,7 @@ import {
  import '../Styles/styles.css';
 
 import GriddleSearch from './griddleSearch';
-import IconUmbrella from './floorPlan';
+import FloorPlan from './floorPlan';
 
 
 class NewToolbar extends React.Component{
@@ -100,7 +100,7 @@ fitToViewer() {
                   customMiniature={NewNavigation} // Removes miniature map
                >
                   <svg width={1000} height={700} >
-                     <IconUmbrella />
+                     <FloorPlan />
                   </svg>  
                   
                </ReactSVGPanZoom>         
