@@ -30,6 +30,18 @@ export default class SvgHandler extends React.PureComponent {
       this.state = {
          tool: TOOL_PAN, 
          value: INITIAL_VALUE, 
+         rooms: [
+            {
+               name: "C213",
+               available: true
+            },
+            {
+               name: "C214",
+               available: false
+            }
+               
+         ],
+
          img_url: "floor_plan_without_map.svg",
       };
       this.handler = this.handler.bind(this);
@@ -96,7 +108,7 @@ fitToViewer() {
                   customMiniature={NewNavigation} // Removes miniature map
                >
                   <svg width={1000} height={700} >
-                     <FloorPlan available={false}/>
+                     <FloorPlan rooms={this.state.rooms}/>
                   </svg>  
                   
                </ReactSVGPanZoom>         

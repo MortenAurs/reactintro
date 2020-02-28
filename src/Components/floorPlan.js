@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const FloorPlan = props => (
-  
+const FloorPlan = props => props.rooms.map((room) => {
+  console.log(room.name);
+
+
+   return(
       <svg version="1.1" id="marked_x5F_rooms">
          
          <style type="text/css">{`
@@ -11,10 +14,11 @@ const FloorPlan = props => (
             .st1{fill:#E0E0E0;}
             .st2{fill:#9BBABC;}
             .st3{fill:#3BAFA2;}
-            #C213{fill:${props.available  ? 'red' : 'blue'}`}
+            #${room.name}{fill:${room.available ? 'blue' : 'red'};}
+            `}
+            
          </style>
          <switch>
-
             <g>
                <g id="campus_x5F_outline">
                   <path class="st0" d="M435.6,314.5"/>
@@ -94,7 +98,7 @@ const FloorPlan = props => (
                   <polygon class="st3" points="473.5,222.3 494.3,222.4 494.3,183.1 473.5,183.1 			"/>
                   <rect x="495.4" y="182.9" class="st3" width="20.8" height="51.2"/>
                   <polygon id="C213" class="st3" points="517.3,234.1 532.6,234.2 532.7,213.4 549.1,213.5 549.1,182.9 517.3,182.9 			"/>
-                  <polygon class="st3" points="89.1,160.5 110,160.5 110,109.1 89.1,109.4 			"/>
+                  <polygon id="C214" class="st3" points="89.1,160.5 110,160.5 110,109.1 89.1,109.4 			"/>
                   <polygon class="st3" points="122.1,146.8 153.9,146.9 153.9,109.1 122.1,109.1 			"/>
                   <polygon class="st3" points="89.1,198.1 89,232.5 110,232.5 110,198.1 			"/>
                </g>
@@ -102,7 +106,8 @@ const FloorPlan = props => (
          </switch>
 
       </svg>
-);
+   )
+})
   
   // which makes this reusable component for other views
  export default FloorPlan;
