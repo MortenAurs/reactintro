@@ -30,6 +30,7 @@ class App extends React.Component{
                      <li>
                      <Link to="/svg">Svg</Link>
                      </li>
+                 
                   </ul>
                </nav>
 
@@ -43,6 +44,7 @@ class App extends React.Component{
                   <Route path="/svg">
                      <FloorPlan />
                   </Route>
+           
                   <Route path="/">
                      <Home />
                   </Route>

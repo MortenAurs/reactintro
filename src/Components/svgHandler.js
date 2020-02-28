@@ -5,10 +5,8 @@ import {
    ReactSVGPanZoom,
    TOOL_PAN,
  } from 'react-svg-pan-zoom';
- import {ReactSvgPanZoomLoader} from 'react-svg-pan-zoom-loader'
  import '../Styles/styles.css';
 
-import GriddleSearch from './griddleSearch';
 import FloorPlan from './floorPlan';
 
 
@@ -76,8 +74,6 @@ fitToViewer() {
  
 
 
-
- 
   render() {
    console.log("THISSTATEVALUE")
    console.log(this.state.value)
@@ -100,7 +96,7 @@ fitToViewer() {
                   customMiniature={NewNavigation} // Removes miniature map
                >
                   <svg width={1000} height={700} >
-                     <FloorPlan />
+                     <FloorPlan available={false}/>
                   </svg>  
                   
                </ReactSVGPanZoom>         
