@@ -33,11 +33,13 @@ export default class SvgHandler extends React.PureComponent {
          rooms: [
             {
                name: "C213",
-               available: true
+               available: true,
+               active: true
             },
             {
                name: "C214",
-               available: false
+               available: false,
+               active: false
             }
                
          ],
@@ -107,6 +109,7 @@ fitToViewer() {
                   customToolbar={NewToolbar} // Removes toolbar
                   customMiniature={NewNavigation} // Removes miniature map
                >
+               
                   <svg width={1000} height={700} >
                      <FloorPlan rooms={this.state.rooms}/>
                   </svg>  
