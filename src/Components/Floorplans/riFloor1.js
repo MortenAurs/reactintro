@@ -10,8 +10,8 @@ const RinFloor1 = props => (
          .st1{fill:#E0E0E0;}
          .st2{fill:#9BBABC;}
          .st3{fill:#3BAFA2;}
-         #${props.room}{
-            fill:${props.available ? 'blue' : 'red'};
+         #${props.room.name}{
+            fill:${props.room.available ? 'blue' : 'red'};
          }
       `}
          

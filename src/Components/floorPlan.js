@@ -7,7 +7,7 @@ const FloorPlan = props => props.rooms.map((room) => {
 
    
    return(
-      <RinFloor1 room={room.name} available={room.available} active={room.active} />
+      <RinFloor1 room={room} />
    )
 })
   

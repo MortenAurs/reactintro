@@ -8,7 +8,6 @@ import {
    Route,
    Link
  } from "react-router-dom";
-import FloorPlan from "./Components/floorPlan";
 
 
 class App extends React.Component{
@@ -27,9 +26,7 @@ class App extends React.Component{
                      <li>
                      <Link to="/search">Search</Link>
                      </li>
-                     <li>
-                     <Link to="/svg">Svg</Link>
-                     </li>
+               
                  
                   </ul>
                </nav>
@@ -41,9 +38,7 @@ class App extends React.Component{
                   <Route path="/map">
                      <Map />
                   </Route>
-                  <Route path="/svg">
-                     <FloorPlan />
-                  </Route>
+               
            
                   <Route path="/">
                      <Home />
